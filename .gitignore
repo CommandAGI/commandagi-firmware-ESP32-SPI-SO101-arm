@@ -1,0 +1,7 @@
+.pio/
+build/
+__pycache__/
+*.pyc
+.venv/
+idf_component.yml
+**/idf_component.yml
