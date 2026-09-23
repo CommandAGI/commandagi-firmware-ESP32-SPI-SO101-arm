@@ -292,8 +292,8 @@ void setup() {
   BleProv::begin();
 
   // TODO: optional onboard camera POV. The arm is an ESP32-CAM, so it could ALSO stream its own view
-  // (Camera::begin() + Cloud::postFrame to /v1/streams) exactly like apps/clients/firmware/esp32-cam. Slot the
-  // camera bring-up here (see apps/clients/firmware/esp32-cam/src/camera.cpp) and a frame POST in the loop; report
+  // (Camera::begin() + Cloud::postFrame to /v1/streams) exactly like apps/clients/firmware/ESP32-32S-OV3660-cam. Slot the
+  // camera bring-up here (see apps/clients/firmware/ESP32-32S-OV3660-cam/src/camera.cpp) and a frame POST in the loop; report
   // it as a second device on the same session. Intentionally NOT implemented now — control-only.
 
   if (Store::hasCreds()) {

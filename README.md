@@ -1,11 +1,27 @@
-# CommandAGI robot firmware (private)
+# ESP32-SPI-SO101-arm
+
+Part of [CommandAGI](https://commandagi.com): connecting agents to real computers, robots and
+physical environments. This repository can be cloned independently of the private platform code.
+
+```sh
+git clone https://github.com/CommandAGI/commandagi-firmware-ESP32-SPI-SO101-arm.git
+cd commandagi-firmware-ESP32-SPI-SO101-arm
+```
+
+## Hardware status
+
+Despite the repository's requested `SPI` label, the current servo driver speaks Feetech's
+half-duplex **TTL UART** protocol at 1 Mbps (`firmware/src/sts_bus.h`), not SPI. Use the documented
+UART wiring; do not infer the electrical interface from the repo name. The default PlatformIO
+board is `esp32cam`. Hardware motion and live platform interoperability need supervised validation.
+
 
 ESP32-based robot control firmware for putting a physical **SO-101 (LeRobot) arm** on
 [CommandAGI](https://commandagi.com), plus design notes and hardware references.
 
 This is the **embedded / standalone** track. The public, computer-proxy version (a plain
 Python script that runs on a laptop plugged into the SO-101 USB driver) lives in the
-public example repo `commandagi-example-so101`. This repo is where the on-device firmware
+public example repo `commandagi-example-connect-a-so101-arm`. This repo is where the on-device firmware
 and the **no-computer, Wi-Fi** robot live.
 
 ## Standalone (no laptop) — exactly like the CommandAGI cameras
@@ -85,3 +101,12 @@ A motion command here energizes the arm just like a cloud action.
   teleop pass (see NOTES.md → "Hardware testing still needed").
 
 See `NOTES.md` for everything.
+
+## License
+
+[MIT](LICENSE).
+
+## Build verification (2026-09-22)
+
+All PlatformIO environments declared by this repository compiled successfully using PlatformIO
+6.2.0. This verifies compilation, not physical wiring, sensor operation or live cloud connectivity.

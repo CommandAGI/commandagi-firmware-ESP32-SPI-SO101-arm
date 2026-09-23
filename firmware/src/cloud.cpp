@@ -6,7 +6,7 @@
 #include "config.h"
 #include "status.h"
 
-// Ported from the camera firmware (apps/clients/firmware/esp32-cam/src/cloud.cpp). Same Wi-Fi join + the same
+// Ported from the camera firmware (apps/clients/firmware/ESP32-32S-OV3660-cam/src/cloud.cpp). Same Wi-Fi join + the same
 // POST /worlds → POST /sessions/:id/connect-device registration handshake, but:
 //   - connect-device reports kind="robot" (the camera reports kind="camera"), and
 //   - instead of POSTing media frames, the arm GETs the /control channel for the next action to run.

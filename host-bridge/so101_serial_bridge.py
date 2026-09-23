@@ -10,7 +10,7 @@ This is the *host* side of a two-piece example:
 
 Anyone with the session link — a person in the web UI, an AI agent, or another developer's SDK
 client — then watches the camera and drives the arm in real time. This is the same BYO-robot
-pattern as the `commandagi-example-byo-robot` rover, pointed at real hardware.
+pattern as the `commandagi-example-connect-a-virtual-rover` rover, pointed at real hardware.
 
 Run it:
 

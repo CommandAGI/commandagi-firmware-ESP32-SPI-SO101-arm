@@ -5,3 +5,8 @@ __pycache__/
 .venv/
 idf_component.yml
 **/idf_component.yml
+.env
+.env.*
+!.env.example
+node_modules/
+.DS_Store

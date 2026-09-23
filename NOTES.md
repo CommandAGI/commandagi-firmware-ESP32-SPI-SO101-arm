@@ -6,7 +6,7 @@
 Laptop runs a Python script plugged into the SO-101's Feetech USB bus-servo adapter;
 the script uses the CommandAGI SDK (`register_robot` → `bridge.run`) and writes joint
 goals straight to the bus. No microcontroller. This is the standard LeRobot path and is
-the public example repo `commandagi-example-so101` (`so101_arm.py`).
+the public example repo `commandagi-example-connect-a-so101-arm` (`so101_arm.py`).
 
 **B. Standalone Wi-Fi (embedded) — BUILT (this firmware).**
 The ESP32 itself is the brain: pairs over BLE, joins Wi-Fi, self-registers with CommandAGI

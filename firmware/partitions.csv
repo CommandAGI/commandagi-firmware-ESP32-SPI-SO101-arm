@@ -1,6 +1,6 @@
 # CommandAGI SO-101 robot-arm partition table — 4MB flash, dual-OTA, NO factory/secure-boot.
 #
-# IDENTICAL layout to the camera firmware (apps/clients/firmware/esp32-cam/partitions.csv): two ~1.9MB app slots
+# IDENTICAL layout to the camera firmware (apps/clients/firmware/ESP32-32S-OV3660-cam/partitions.csv): two ~1.9MB app slots
 # (ota_0/ota_1) give the BLE + Wi-Fi + TLS image room to grow AND enable future over-the-air updates
 # with rollback. There is no factory partition and we never enable Secure Boot or Flash Encryption —
 # so the device can ALWAYS be re-flashed over USB-UART with esptool/PlatformIO. The `nvs` partition is

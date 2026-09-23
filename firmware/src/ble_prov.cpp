@@ -6,7 +6,7 @@
 #include "status.h"
 #include "crypto.h"
 
-// Ported from the camera firmware (apps/clients/firmware/esp32-cam/src/ble_prov.cpp). Same GATT service/chars,
+// Ported from the camera firmware (apps/clients/firmware/ESP32-32S-OV3660-cam/src/ble_prov.cpp). Same GATT service/chars,
 // same PIN-sealed PROVISION write, same STATUS notify — the ONLY behavioral change is INFO reports
 // kind="arm" + model="CommandAGI Robot Arm" (no mic field) so the app labels this device a robot.
 
