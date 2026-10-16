@@ -88,8 +88,8 @@ the ESP32 can run off the board); check the silkscreen.
 
 ## Flashing (ESP32-CAM)
 
-- **Canonical path: the monorepo general flasher** — `make flash-device PRODUCT=arm` (repo root),
-  i.e. `scripts/flash-device.mjs --product arm`. It builds this `firmware/` project (env `esp32cam`),
+- **Canonical path: the monorepo general flasher** — `make flash-device PRODUCT=commandagi-arm` (repo root),
+  i.e. `scripts/hardware/flash-embodiment.mjs --product commandagi-arm`. It builds this `firmware/` project (env `esp32cam`),
   compiles a per-unit provisioning PIN in (`-DCAGI_PROV_PIN`), flashes over USB, reads the
   `CommandAGI Arm XXXX` BLE suffix back over serial, and appends the unit to `labels.csv`
   (`LOOP=1` for batch). Same tool that flashes the camera — see the repo `scripts/README.md`.
