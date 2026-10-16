@@ -84,6 +84,12 @@ host-bridge/         Reference: the tethered Python bridge (laptop ↔ ESP32 ove
 NOTES.md             Architecture, wiring, hardware, calibration, safety
 ```
 
+The channels this firmware gives are declared once, in CommandAGI's cloud seed:
+`seed/drive/platform/user-commandagi/hardware/ESP32-SPI-SO101-arm/firmware/firmware.tsx`
+(`cloud://home/user-commandagi/hardware/ESP32-SPI-SO101-arm/firmware`). That folder's `platformio.ini` builds this
+source for the product (env `commandagi-arm`), and the device definition `commandagi-arm` names it. When a change
+here changes a channel, change that file in the same step.
+
 ## USB-serial dev/debug fallback (kept for bench testing)
 
 The board stays flashable + testable over USB. Line-delimited JSON @ 115200:
